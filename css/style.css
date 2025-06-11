@@ -1,0 +1,1068 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #FBBB48;
+}
+
+body {
+    font-family: 'Pretendard Variable';
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+    min-width: 1320px;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* 스크롤바 */
+::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+
+
+::-webkit-scrollbar-thumb {
+    background-color: #FBBB48;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #F28F38;
+}
+
+
+/* 헤더 */
+#header {
+    background-color: #212C54;
+    border-bottom: 3px solid #FBBB48;
+    box-sizing: border-box;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.5s;
+    z-index: 100;
+}
+
+.nav-up {
+    transform: translateY(-100%);
+}
+
+.top {
+    display: flex;
+    position: relative;
+    width: 1320px;
+    margin: auto;
+    align-items: center;
+}
+
+.nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 20px 0;
+    font-size: 24px;
+    font-family: 'Paperlogy';
+}
+
+.logo {
+    display: block;
+    width: 80px;
+}
+
+.nav a:hover {
+    color: #fff;
+}
+
+.sub {
+    position: absolute;
+    top: 35%;
+    right: -180px;
+    display: flex;
+    align-items: center;
+}
+
+.sub li {
+    display: flex;
+}
+
+.sub a {
+    font-family: 'Paperlogy';
+    font-size: 16px;
+    margin-left: 2px;
+}
+
+.sub li:nth-child(3) {
+    margin-left: 45px;
+}
+
+.sub a:hover {
+    text-decoration: underline;
+}
+
+/* 메인 배너 */
+.main_bn {
+    width: 1320px;
+    margin: 250px auto 300px;
+    overflow: visible;
+}
+
+/* 버튼 */
+.main_bn .swiper-button-next:after,
+.main_bn .swiper-button-prev:after {
+    display: none;
+}
+
+.main_bn .swiper-button-next,
+.main_bn .swiper-button-prev {
+    width: 54px;
+    height: 54px;
+}
+
+.main_bn .swiper-button-prev {
+    left: -75px;
+}
+
+.main_bn .swiper-button-next {
+    right: -75px;
+}
+
+.mb_slide {
+    transition: linear;
+}
+
+/* 배너 텍스트 */
+.mb {
+    position: relative;
+}
+
+.mb img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.mb_text {
+    position: absolute;
+    top: 240px;
+    left: 100px;
+}
+
+.mb h4 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.mb h1 {
+    font-size: 50px;
+    line-height: 59px;
+    margin: 10px 0 40px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.mb a {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 5px 15px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* 첫번째 배너 */
+.text1 h4,
+.text1 a {
+    color: #F1FFCF;
+}
+
+.text1 a {
+    border: 1px solid #F1FFCF;
+}
+
+.text1 a:hover {
+    color: #2D6100;
+    background-color: #F1FFCF;
+    font-weight: 400;
+}
+
+/* 두번째 배너 */
+.text2 h4,
+.text2 a {
+    color: #FFEBBF;
+}
+
+.text2 a {
+    border: 1px solid #F1FFCF;
+}
+
+.text2 a:hover {
+    color: #FFB73D;
+    background-color: #FFEBBF;
+    font-weight: 400;
+}
+
+/* 세번째 배너 */
+.text3 h4,
+.text3 a {
+    color: #B4FFF3;
+}
+
+.text3 a {
+    border: 1px solid #B4FFF3;
+}
+
+.text3 a:hover {
+    color: #3EBEC3;
+    background-color: #B4FFF3;
+    font-weight: 400;
+}
+
+/* 네번째 배너 */
+.text4 h4,
+.text4 a {
+    color: #FFD06C;
+}
+
+.text4 a {
+    border: 1px solid #FFD06C;
+}
+
+.text4 a:hover {
+    color: #0D1168;
+    background-color: #FFD06C;
+    font-weight: 400;
+}
+
+.mb_slide .swiper-slide-prev,
+.mb_slide .swiper-slide-next {
+    filter: blur(3px);
+}
+
+/* 브랜드소개 */
+#brand {
+    width: 1320px;
+    margin: 150px auto;
+}
+
+.br_box {
+    display: flex;
+    margin-bottom: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.br_left {
+    margin-left: 50px;
+}
+
+.br_right {
+    text-align: right;
+}
+
+#brand div img {
+    display: block;
+}
+
+#brand div:nth-child(2) img {
+    margin-left: 50px;
+}
+
+.br_right h3,
+.br_left h3 {
+    color: #F28F38;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.br_box p {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+/* 공공질서 준수사항 */
+#caution {
+    width: 1320px;
+    margin: 150px auto;
+}
+
+h1 {
+    font-family: 'Paperlogy';
+    font-size: 45px;
+    line-height: 53px;
+    color: #212C54;
+}
+
+.caution_img {
+    margin: 46px 0 100px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.caution_img img {
+    width: 255px;
+    display: block;
+}
+
+.caution_text {
+    display: flex;
+    padding: 25px 0 25px 113px;
+    box-sizing: border-box;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+    background: url(../images/icon_caution.png) no-repeat 68px 30px;
+}
+
+.caution_text h2 {
+    font-family: 'Paperlogy';
+    font-size: 40px;
+    line-height: 47px;
+    margin-right: 72px;
+    font-weight: 600;
+}
+
+/* 시설안내 */
+#fac {
+    background-color: rgba(246, 246, 246, 0.5);
+    margin: 150px 0;
+}
+
+.fac_in {
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
+.fac_slide_R .swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+    opacity: 60%;
+    background-color: #fff;
+    width: 8px;
+    height: 8px;
+}
+
+.fac_slide_R .swiper-pagination-bullet-active {
+    background-color: #212C54;
+    opacity: 100%;
+}
+
+
+.fac_box {
+    height: 660px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fac_box img {
+    min-width: 960px;
+    width: 100%;
+}
+
+.fac_box .fac_right .fac_left {
+    text-align: center;
+    width: 50%;
+}
+
+.fac_left {
+    margin-left: 240px;
+}
+
+.fac_left h1 {
+    margin: 100px 0 15px;
+}
+
+.fac_slide_L {
+    width: 630px;
+    margin-right: 30px;
+}
+
+.fac_slide_L,
+.fac_slide_R {
+    cursor: pointer;
+}
+
+.fac_text h3 {
+    color: #F28F38;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Paperlogy';
+    margin: 75px 0 15px;
+}
+
+.fac_text p {
+    margin-top: 10px;
+}
+
+/* 체험 프로그램 */
+#event {
+    text-align: center;
+}
+
+.evt_box {
+    margin: 50px auto 150px;
+    display: flex;
+    justify-content: space-around;
+    min-width: 1720px;
+}
+
+.evt_box>div {
+    width: 20%;
+}
+
+.evt_box>div h2 {
+    font-size: 40px;
+    font-family: 'Paperlogy';
+    margin: 40px 0 20px;
+    font-weight: 600;
+}
+
+.evt_box>div p {
+    margin-top: 5px;
+}
+
+.evt_img {
+    overflow: hidden;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 150px 150px 0 0;
+    position: relative;
+}
+
+.evt_img img {
+    display: block;
+    transition: 0.5s;
+    width: 100%;
+}
+
+.highlight {
+    display: inline-block;
+    position: relative;
+}
+
+.evt_box>div:hover .highlight::after {
+    width: 100%;
+}
+
+.highlight::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 35px;
+    background-color: #FBBB48;
+    top: 3px;
+    left: 10px;
+    position: absolute;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.evt_box>div:hover .evt_img img {
+    transform: scale(1.05);
+}
+
+
+.evt_box>div:hover .wave::after {
+    height: 100%;
+}
+
+.wave::after {
+    content: "";
+    width: 100%;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.wave_1::after {
+    background: rgb(68, 180, 216);
+}
+
+.wave_2::after {
+    background: #a5c469;
+}
+
+.wave_3::after {
+    background: rgb(255, 220, 72);
+}
+
+.wave_4::after {
+    background: rgb(19, 47, 124);
+}
+
+/* 예약 요금 안내 */
+#reserve {
+    text-align: center;
+    width: 1320px;
+    margin: auto;
+}
+
+.reserve_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto 100px;
+}
+
+.date {
+    display: flex;
+    width: 804px;
+    overflow: hidden;
+}
+
+.date_wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.reserve_box>h1 {
+    font-family: "Titan One", sans-serif;
+    font-size: 60px;
+}
+
+.reserve_box>a {
+    display: inline-block;
+    padding: 18px 28px;
+    background-color: #212C54;
+    color: #FBBB48;
+    border-radius: 10px;
+    font-family: 'Paperlogy';
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.reserve_box>a:hover {
+    color: #212C54;
+    background-color: #FBBB48;
+}
+
+
+.date_slide a {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+    color: #000;
+    margin-bottom: 20px;
+    width: 23px;
+    height: 23px;
+}
+
+.date_slide p {
+    color: #000;
+    font-family: 'Paperlogy';
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.date_slide {
+    text-align: center;
+}
+
+.btn_on {
+    background-color: #FBBB48;
+    border-radius: 50px;
+}
+
+.date_slide a:hover {
+    color: #F28F38;
+}
+
+/* 방 소게 */
+.room {
+    display: flex;
+    justify-content: space-between;
+}
+
+.room_img {
+    overflow: hidden;
+    width: 300px;
+    height: 400px;
+    position: relative;
+}
+
+.room_hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    opacity: 0%;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.room_hover p {
+    font-family: 'Paperlogy';
+    color: #F0EDE5;
+    font-size: 13px;
+    margin-left: 45px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.room_hover p:nth-child(4) {
+    margin-bottom: 0;
+}
+
+.room_img img {
+    display: block;
+}
+
+.room_img:hover .room_hover {
+    opacity: 100%;
+}
+
+.room_text {
+    margin: 20px 0 15px;
+    text-align: left;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 20px 0;
+}
+
+.room_text h3 {
+    font-family: 'Paperlogy';
+    font-size: 25px;
+    color: #212C54;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.room_box>p {
+    color: #212C54;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: right;
+    font-family: 'Paperlogy';
+}
+
+.room_hover p:nth-child(1) {
+    background: url(../images/icon_room_people.png) no-repeat 19% center;
+}
+
+.room_hover p:nth-child(2) {
+    background: url(../images/icon_room_el.png) no-repeat 20% center;
+}
+
+.room_hover p:nth-child(3) {
+    background: url(../images/icon_room_grill.png) no-repeat 20% center;
+}
+
+.room_hover p:nth-child(4) {
+    background: url(../images/icon_room_wifi.png) no-repeat 19% center;
+}
+
+.room>div:nth-child(2) p:nth-child(4){
+    background: url(../images/icon_room_wifi_off.png) no-repeat 19% center;
+}
+
+/* 환불규정 */
+.room_notice {
+    display: flex;
+    text-align: left;
+    gap: 35px;
+    margin: 50px 0 100px;
+}
+
+.room_notice h3 {
+    font-family: 'Paperlogy';
+    font-size: 20px;
+}
+
+.room_notice p {
+    color: #666;
+}
+
+/* 환불규정, 유의사항 */
+.notice {
+    margin: auto;
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.notice_L h1 {
+    background: url(../images/icon_moneny.png) no-repeat 31% 30%;
+    margin-bottom: 42px;
+}
+
+.notice_R h1 {
+    background: url(../images/icon_warning.png) no-repeat 35% 30%;
+    margin-bottom: 42px;
+}
+
+.nt_L2 {
+    margin: 40px 0 33px;
+}
+
+.nt_R2 {
+    margin: 20px 0 53px;
+}
+
+.notice_text h3 {
+    color: #F28F38;
+    font-family: 'Paperlogy';
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.gray {
+    color: #999;
+}
+
+.orange {
+    color: #F28F38;
+}
+
+.notice a {
+    display: inline-block;
+    font-family: 'Paperlogy';
+    padding: 15px 50px;
+    border: 1px solid #212C54;
+    color: #333;
+    font-weight: 400;
+}
+
+.notice a:hover {
+    color: #fff;
+    background-color: #212C54;
+    font-weight: 500;
+}
+
+/* 상담 위치안내 */
+.call_map {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0;
+}
+
+.call_map div {
+    border: 1px solid #D9D9D9;
+    width: 650px;
+    padding: 40px 20px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.call p:nth-child(2),
+.map p:nth-child(2) {
+    margin: 25px 0 10px;
+    font-size: 18px;
+}
+
+.call {
+    background: url(../images/icon_call.png) no-repeat 93% center;
+}
+
+.map {
+    background: url(../images/icon_map_search.png) no-repeat 93% center;
+}
+
+/* 자주묻는질문 */
+.q_a {
+    width: 1320px;
+    margin: auto;
+    text-align: left;
+}
+
+.main_qa {
+    width: 1320px;
+    margin: 40px 0 200px;
+}
+
+.main_qa li {
+    width: 100%;
+}
+
+.main_qa li a {
+    border-top: none;
+    display: block;
+    display: flex;
+    padding: 25px 0 25px 40px;
+    color: #F28F38;
+    background: url(../images/icon_Plus.png) no-repeat 93% center;
+    border: 1px solid #212C54;
+    border-bottom: none;
+}
+
+.main_qa li:nth-child(4) a {
+    border-bottom: 1px solid #212C54;
+}
+
+.main_qa li div {
+    display: none;
+    width: 100%;
+    border-top: none;
+    background-color: #F6F6F6;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    border: #212C54 1px solid;
+    border-bottom: none;
+}
+
+.main_qa li:nth-child(4) div {
+    border-bottom: 1px solid #212C54;
+}
+
+.main_qa li:hover a {
+    background: url(../images/icon_Plus_hover.png) no-repeat 93% center #212C54;
+}
+
+.main_qa li.qa_on a {
+    background: url(../images/icon_Plus_hover.png) no-repeat 93% center #212C54;
+}
+
+.main_qa li a h2 {
+    font-family: 'Paperlogy';
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.main_qa li a h2:nth-child(2) {
+    margin-left: 90px;
+}
+
+.main_qa li div p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.main_qa li div p:nth-child(1) {
+    margin-bottom: 15px;
+}
+
+.main_qa li:nth-child(4) .main_qa li div p {
+    margin-bottom: 0;
+}
+
+.main_qa li div iframe {
+    width: 100%;
+    height: 530px;
+    border: 1px solid #212C54;
+    margin-top: 15px;
+}
+
+/* 커뮤니티 */
+#community {
+    text-align: center;
+}
+
+#community h1 {
+    color: #F28F38;
+}
+
+#community h3 {
+    font-family: 'Paperlogy';
+    font-weight: 600;
+    margin: 20px 0 50px;
+}
+
+/* 아용후기 */
+.simply-scroll {
+    width: 100%;
+    height: 865px;
+    margin-bottom: 0;
+}
+
+.scroll_content {
+    height: 865px;
+    margin: auto;
+    display: flex;
+}
+
+.simply-scroll .simply-scroll-clip {
+    min-width: 1920px;
+    width: 100%;
+    height: 865px;
+    margin-bottom: 0;
+}
+
+.scroll_content img {
+    display: block;
+}
+
+.review_text {
+    margin: 30px 0 0 35px;
+}
+
+.review_text_top {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 23px;
+}
+
+.review_text_top img {
+    display: block;
+}
+
+.review_text_top img:nth-child(1) {
+    height: 41px;
+    margin-right: 5px;
+}
+
+.review_text_top img:nth-child(4) {
+    height: 24px;
+    margin-left: 10px;
+}
+
+.review_text_top h4 {
+    font-family: 'Paperlogy';
+    font-weight: 600;
+    color: #F28F38;
+    font-size: 25px;
+    margin-right: 15px;
+}
+
+.review_text_top p {
+    font-size: 14px;
+    font-weight: 300;
+    margin-block-end: -5px;
+}
+
+.review_text_bottom {
+    text-align: left;
+}
+
+.review_text_bottom p {
+    font-size: 18px;
+}
+
+.review_text_bottom h4 {
+    font-family: 'Paperlogy';
+    font-weight: 600;
+    color: #212C54;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/* 포토갤러리 */
+.photo {
+    width: 1320px;
+    margin: 0 auto 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo div {
+    overflow: hidden;
+}
+
+.photo img {
+    display: block;
+    width: 220px;
+    transition: 1s;
+}
+
+.photo img:hover {
+    transform: scale(1.1);
+}
+
+.photo_plus {
+    display: block;
+    width: 220px;
+    height: 220px;
+    background: url(../images/icon_camera.png) no-repeat 50% 50% #FBBB48;
+    transition: 0.5s;
+}
+
+.photo_plus:hover {
+    background: url(../images/icon_camera_hover.png) no-repeat 50% 50% #F28F38;
+}
+
+/* 푸터 */
+#footer {
+    background-color: #212C54;
+    padding: 50px 0;
+}
+
+.footer_in {
+    width: 1320px;
+    margin: auto;
+    text-align: center;
+}
+
+.footer_in img {
+    display: inline-block;
+}
+
+.footer_in>img {
+    width: 105px;
+}
+
+.footer_in ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_in ul:nth-child(2) {
+    margin: 40px 0 54px;
+    gap: 58px;
+}
+
+.footer_in ul:nth-child(2) a:hover {
+    filter: grayscale(200%);
+}
+
+.footer_in ul:nth-child(3) {
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.footer_in ul:nth-child(3) a {
+    color: #fff;
+}
+
+.footer_in ul:nth-child(3) a:hover {
+    color: #FBBB48;
+    text-decoration: underline;
+}
+
+.footer_in p {
+    color: #F0EDE5;
+    font-family: 'Paperlogy';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.footer_in p:nth-child(4) {
+    margin-bottom: 50px;
+}
