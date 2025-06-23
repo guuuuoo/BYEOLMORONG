@@ -20,7 +20,6 @@ body {
     line-height: 24px;
     color: #333;
     min-width: 1320px;
-    overflow-x: hidden;
 }
 
 html {
@@ -32,7 +31,6 @@ html {
     width: 10px;
 
 }
-
 
 
 ::-webkit-scrollbar-thumb {
@@ -81,14 +79,14 @@ html {
 
 .nav a {
     display: inline-block;
-    padding: 20px 0;
-    font-size: 24px;
+    padding: 10px 0;
+    font-size: 20px;
     font-family: 'Paperlogy';
 }
 
 .logo {
     display: block;
-    width: 80px;
+    width: 65px;
 }
 
 .nav a:hover {
@@ -124,8 +122,9 @@ html {
 /* 메인 배너 */
 .main_bn {
     width: 1320px;
-    margin: 250px auto 300px;
-    overflow: visible;
+    width: 100%;
+    margin: 200px auto 100px;
+    overflow: hidden;
 }
 
 /* 버튼 */
@@ -134,18 +133,18 @@ html {
     display: none;
 }
 
-.main_bn .swiper-button-next,
-.main_bn .swiper-button-prev {
-    width: 54px;
-    height: 54px;
+.main_bn .swiper-button-next img,
+.main_bn .swiper-button-prev img {
+    width: 45px;
+    height: 45px;
 }
 
 .main_bn .swiper-button-prev {
-    left: -75px;
+    left: 13.5%;
 }
 
 .main_bn .swiper-button-next {
-    right: -75px;
+    right: 13.5%;
 }
 
 .mb_slide {
@@ -160,25 +159,24 @@ html {
 .mb img {
     display: block;
     width: 100%;
-    height: 100%;
 }
 
 .mb_text {
     position: absolute;
-    top: 240px;
+    top: 35%;
     left: 100px;
 }
 
 .mb h4 {
     font-size: 20px;
     line-height: 24px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .mb h1 {
     font-size: 50px;
     line-height: 59px;
-    margin: 10px 0 40px;
+    margin: 10px 0 30px;
     color: #fff;
     font-weight: 600;
 }
@@ -263,12 +261,12 @@ html {
 /* 브랜드소개 */
 #brand {
     width: 1320px;
-    margin: 150px auto;
+    margin: auto;
 }
 
 .br_box {
     display: flex;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
     align-items: center;
     justify-content: space-between;
 }
@@ -301,8 +299,9 @@ html {
 .br_box p {
     font-size: 18px;
     line-height: 30px;
-    font-weight: 500;
+    font-weight: 400;
 }
+
 
 /* 공공질서 준수사항 */
 #caution {
@@ -325,7 +324,7 @@ h1 {
 }
 
 .caution_img img {
-    width: 255px;
+    width: 300px;
     display: block;
 }
 
@@ -381,6 +380,7 @@ h1 {
 .fac_box img {
     min-width: 960px;
     width: 100%;
+    height: auto;
 }
 
 .fac_box .fac_right .fac_left {
@@ -427,7 +427,8 @@ h1 {
     margin: 50px auto 150px;
     display: flex;
     justify-content: space-around;
-    min-width: 1720px;
+    min-width: 1320px;
+    width: 90%;
 }
 
 .evt_box>div {
@@ -435,10 +436,11 @@ h1 {
 }
 
 .evt_box>div h2 {
-    font-size: 40px;
+    font-size: 28px;
     font-family: 'Paperlogy';
     margin: 40px 0 20px;
     font-weight: 600;
+    line-height: 1;
 }
 
 .evt_box>div p {
@@ -473,10 +475,10 @@ h1 {
     content: "";
     display: inline-block;
     width: 0;
-    height: 35px;
+    height: 28px;
     background-color: #FBBB48;
-    top: 3px;
-    left: 10px;
+    top: 8px;
+    left: 8px;
     position: absolute;
     z-index: -1;
     transition: 0.5s;
@@ -526,16 +528,18 @@ h1 {
 }
 
 .reserve_box {
+    /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 40px auto 100px;
+    margin: 40px auto 50px;
 }
 
 .date {
     display: flex;
     width: 804px;
     overflow: hidden;
+    padding-bottom: 5px;
 }
 
 .date_wrapper {
@@ -564,14 +568,12 @@ h1 {
     background-color: #FBBB48;
 }
 
-
 .date_slide a {
     display: inline-block;
     font-size: 20px;
     font-weight: 500;
     padding: 10px;
     color: #000;
-    margin-bottom: 20px;
     width: 23px;
     height: 23px;
 }
@@ -586,6 +588,20 @@ h1 {
 
 .date_slide {
     text-align: center;
+}
+
+.swiper-scrollbar-drag {
+    background-color: rgb(251, 187, 72, 0.5);
+}
+
+.swiper-horizontal>.swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+    bottom: 0;
+    background-color: transparent;
+}
+
+.swiper-scrollbar {
+    background-color: #fff;
 }
 
 .btn_on {
@@ -614,7 +630,7 @@ h1 {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 100%;
 
@@ -624,7 +640,7 @@ h1 {
 
     opacity: 0%;
     transform: scale(1);
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .room_hover p {
@@ -633,7 +649,8 @@ h1 {
     font-size: 13px;
     margin-left: 45px;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: left;
+    padding-left: 90px;
 }
 
 
@@ -689,7 +706,7 @@ h1 {
     background: url(../images/icon_room_wifi.png) no-repeat 19% center;
 }
 
-.room>div:nth-child(2) p:nth-child(4){
+.room>div:nth-child(2) p:nth-child(4) {
     background: url(../images/icon_room_wifi_off.png) no-repeat 19% center;
 }
 
@@ -777,7 +794,7 @@ h1 {
 .call_map div {
     border: 1px solid #D9D9D9;
     width: 650px;
-    padding: 40px 20px;
+    padding: 40px;
     text-align: left;
     box-sizing: border-box;
 }
@@ -816,7 +833,7 @@ h1 {
     border-top: none;
     display: block;
     display: flex;
-    padding: 25px 0 25px 40px;
+    padding: 20px 0 20px 40px;
     color: #F28F38;
     background: url(../images/icon_Plus.png) no-repeat 93% center;
     border: 1px solid #212C54;
@@ -842,6 +859,7 @@ h1 {
     border-bottom: 1px solid #212C54;
 }
 
+
 .main_qa li:hover a {
     background: url(../images/icon_Plus_hover.png) no-repeat 93% center #212C54;
 }
@@ -852,7 +870,7 @@ h1 {
 
 .main_qa li a h2 {
     font-family: 'Paperlogy';
-    font-size: 32px;
+    font-size: 22px;
     font-weight: 600;
 }
 
@@ -861,15 +879,14 @@ h1 {
 }
 
 .main_qa li div p {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 30px;
-}
-
-.main_qa li div p:nth-child(1) {
     margin-bottom: 15px;
 }
 
-.main_qa li:nth-child(4) .main_qa li div p {
+.main_qa li:nth-child(4) div p,
+.main_qa li:nth-child(1) div p:nth-child(2),
+.main_qa li:nth-child(2) div p:nth-child(2) {
     margin-bottom: 0;
 }
 
@@ -898,21 +915,27 @@ h1 {
 /* 아용후기 */
 .simply-scroll {
     width: 100%;
-    height: 865px;
-    margin-bottom: 0;
+    height: 580px;
+    overflow: hidden;
 }
 
 .scroll_content {
-    height: 865px;
-    margin: auto;
     display: flex;
+    margin: auto;
+}
+
+.scroll_box {
+    margin: 0;
 }
 
 .simply-scroll .simply-scroll-clip {
     min-width: 1920px;
-    width: 100%;
-    height: 865px;
+    height: 580px;
     margin-bottom: 0;
+}
+
+.scroll_content a img {
+    width: 360px;
 }
 
 .scroll_content img {
@@ -920,13 +943,15 @@ h1 {
 }
 
 .review_text {
-    margin: 30px 0 0 35px;
+    margin: 20px 0 0 15px;
 }
 
 .review_text_top {
+    /* border: 1px solid brown; */
     display: flex;
-    align-items: flex-end;
-    margin-bottom: 23px;
+    vertical-align: text-top;
+    align-items:flex-end;
+    margin-bottom: 15px;
 }
 
 .review_text_top img {
@@ -934,12 +959,12 @@ h1 {
 }
 
 .review_text_top img:nth-child(1) {
-    height: 41px;
+    height: 30px;
     margin-right: 5px;
 }
 
 .review_text_top img:nth-child(4) {
-    height: 24px;
+    height: 20px;
     margin-left: 10px;
 }
 
@@ -947,8 +972,8 @@ h1 {
     font-family: 'Paperlogy';
     font-weight: 600;
     color: #F28F38;
-    font-size: 25px;
-    margin-right: 15px;
+    font-size: 20px;
+    margin-right: 10px;
 }
 
 .review_text_top p {
@@ -961,22 +986,28 @@ h1 {
     text-align: left;
 }
 
-.review_text_bottom p {
-    font-size: 18px;
-}
-
 .review_text_bottom h4 {
     font-family: 'Paperlogy';
     font-weight: 600;
     color: #212C54;
-    font-size: 25px;
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
+.review_text_bottom p {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+
 /* 포토갤러리 */
-.photo {
+.gallery {
+    margin: 200px auto 100px;
     width: 1320px;
-    margin: 0 auto 100px;
+}
+
+.photo {
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
 }
@@ -985,7 +1016,7 @@ h1 {
     overflow: hidden;
 }
 
-.photo img {
+.photo img { 
     display: block;
     width: 220px;
     transition: 1s;
@@ -1024,7 +1055,7 @@ h1 {
 }
 
 .footer_in>img {
-    width: 105px;
+    width: 70px;
 }
 
 .footer_in ul {
@@ -1033,9 +1064,15 @@ h1 {
 }
 
 .footer_in ul:nth-child(2) {
-    margin: 40px 0 54px;
+    margin: 40px 0;
     gap: 58px;
 }
+
+.footer_in ul:nth-child(2) img {
+    display: block;
+    width: 35px;
+}
+
 
 .footer_in ul:nth-child(2) a:hover {
     filter: grayscale(200%);
@@ -1048,6 +1085,7 @@ h1 {
 
 .footer_in ul:nth-child(3) a {
     color: #fff;
+    font-size: 13px;
 }
 
 .footer_in ul:nth-child(3) a:hover {
@@ -1060,9 +1098,9 @@ h1 {
     font-family: 'Paperlogy';
     font-weight: 400;
     font-size: 13px;
-    line-height: 15px;
+    line-height: 20px;
 }
 
 .footer_in p:nth-child(4) {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
